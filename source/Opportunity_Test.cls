@@ -8,7 +8,7 @@ public class Opportunity_Test {
         .withLocaleSettings()
         .create();
         System.runAs(testUser){
-            MDF_ProcessFactory.TestData testData = MDF_ProcessFactory.start()
+            MDF_FactoryOrchestrator.TestData testData = MDF_FactoryOrchestrator.start()
             .withAccount('Business_Account','Partner Referral')
             .withProduct()
             .withPricebookEntry()
